@@ -5,5 +5,28 @@ const userInput = readline.createInterface({input, output});
 
 
 let hoogte = parseFloat(await userInput.question('Geef een hoogte: '));
-let breedt = parseFloat(await userInput.question('Geef een breedte: '));
+let breedte = parseFloat(await userInput.question('Geef een breedte: '));
+let rij = '';
+let kolom = '*'
 
+for (let i = 1; i <= breedte; i++) {
+    rij += "*"
+} console.log(rij);
+
+for (let j = 1; j <= hoogte - 2; j++) {
+    kolom = '*';
+    for (let k = 1; k <= breedte - 2; k++) {
+        kolom += ' ';
+    } console.log(kolom + '*')
+}
+
+rij = ''
+
+for (let i = 1; i <= breedte; i++) {
+    rij += "*"
+} console.log(rij);
+
+
+
+
+process.exit();
