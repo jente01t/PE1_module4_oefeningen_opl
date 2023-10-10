@@ -7,4 +7,6 @@ let zijde2 = parseFloat(await userInput.question('Geef de tweede zijde: '));
 
 let oppervlakte = zijde1 * zijde2;
 
-console.log('De oppervlakte van de rechthoek is:' + oppervlakte);
+console.log('De oppervlakte van de rechthoek is: ' + oppervlakte);
+
+process.exit();
