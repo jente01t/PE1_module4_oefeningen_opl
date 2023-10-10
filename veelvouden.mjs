@@ -8,8 +8,9 @@ let deler1 = parseFloat(await userInput.question('Wat is het eerste getal waarop
 let deler2 = parseFloat(await userInput.question('Wat is het tweede getal waarop we testen?'));
 
 for(let i = start; i <= end; i++) {
-    if ((i % deler1 == 0) && (i % deler2 == 0));
-    console.log(i)
+    if ((i % deler1 == 0) && (i % deler2 == 0)) {
+    console.log(i);
+    }
 }
 
 process.exit();
