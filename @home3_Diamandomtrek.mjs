@@ -13,7 +13,7 @@ for (let i = 1; i <= midden; i++) {
     for (let j = 1; j <= midden - i; j++) {
         rij += ' ';
     } rij += '*'
-    for (let k = 1; k < i; k++) {
+    for (let k = 2; k < 2*i-1; k++) {
         rij += ' ';
     } 
     if (i > 1) {
@@ -23,12 +23,21 @@ for (let i = 1; i <= midden; i++) {
 }
 
 
-
-
-
-
 //onderste deel
 
+for (let i = midden - 1; i >= 1; i--) {
+    let rij = '';
+    for (let j = 1; j <= midden - i; j++) {
+        rij += ' '
+    } rij += '*';
+    for (let k = 2; k < 2*i-1; k++) {
+        rij += ' ';
+    }
+    if (i > 1) {
+        rij += '*';
+    }
+    console.log(rij)
+}
 
 
 
