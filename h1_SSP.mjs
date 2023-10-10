@@ -5,13 +5,9 @@ const userInput = readline.createInterface({ input, output });
 
 let userChoise = await userInput.question('Schaar/Steen/Papier: ');
 
-function getRandomChoice(choices) {
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    return choices[randomIndex];
-  }
-  
-  const computerChoiceOptions = ['steen', 'papier', 'schaar'];
-  const computerChoice = getRandomChoice(computerChoiceOptions);
+let choices = ['steen', 'papier', 'schaar'];
+let computerChoice = choices[Math.floor(Math.random()*choices.length)];
+
 
 
 
@@ -32,6 +28,8 @@ if (userChoise == "steen") {
         console.log('Computer wint');
     } else if (computerChoice == "schaar") {
         console.log('User wint');
+    } else {
+        console.log('gelijk')
     }
 }
 
@@ -40,6 +38,8 @@ if (userChoise == "papier") {
         console.log('Computer wint');
     } else if (computerChoice == "steen") {
         console.log('User wint');
+    } else {
+        console.log('gelijk')
     }
 }
 
