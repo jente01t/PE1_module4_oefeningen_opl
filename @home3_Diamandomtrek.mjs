@@ -6,7 +6,6 @@ let hoogte = parseFloat(await userInput.question('Geef de hoogte van de diamand:
 let midden = (hoogte + 1) / 2
 
 
-//bovenste deel
 
 for (let i = 1; i <= midden; i++) {
     let rij = '';
@@ -23,7 +22,6 @@ for (let i = 1; i <= midden; i++) {
 }
 
 
-//onderste deel
 
 for (let i = midden - 1; i >= 1; i--) {
     let rij = '';
